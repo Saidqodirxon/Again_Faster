@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
+  width: 100%;
   padding: 10px 40px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.845);
+  position: fixed;
 }
 
 .navbar {
@@ -30,6 +33,14 @@
   text-transform: uppercase;
   font-weight: 700;
 }
+.link {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.link:hover {
+  color: blue;
+}
 
 .navbar-link {
   display: flex;
@@ -37,10 +48,15 @@
   list-style-type: none;
   gap: 25px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .navbar-link a {
   color: #000;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-link a:hover {
+  color: blue;
 }
 
 .navbar-img {
@@ -63,6 +79,7 @@
 
 .birinchi-bet {
   padding: 80px;
+  margin-top: 50px;
 }
 
 .birinchi-bet h2 {
@@ -82,6 +99,7 @@
 
 .birinchi-img {
   background: #000;
+  margin-top: 50px;
 }
 .birinchi-img img {
   width: 100%;
@@ -168,6 +186,11 @@
 .card {
   font-size: 20px;
   padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  transform: translate(0, -50px);
+  margin-top: 10px;
 }
 
 .card h5 {
